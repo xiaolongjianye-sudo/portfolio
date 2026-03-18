@@ -470,4 +470,7 @@ button:active {
     table{
         min-width: 340px;
     }
+    main{
+        margin: 0px 40px 80px 40px;
+    }
 }
