@@ -475,7 +475,12 @@ button:active {
     }
 }
 @media screen and (max-width:500px){
-        main{
+    main{
         margin: 0px 20px 80px 20px;
     }
+    .icon{
+        width: 108px;
+        height: 108px;
+    }
+
 }
