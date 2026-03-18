@@ -474,3 +474,8 @@ button:active {
         margin: 0px 40px 80px 40px;
     }
 }
+@media screen and (max-width:500px){
+        main{
+        margin: 0px 20px 80px 20px;
+    }
+}
