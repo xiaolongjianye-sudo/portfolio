@@ -4,43 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/drawer.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Document</title>
 </head>
-<body>
-    <header></header>
+<body class="drawer drawer--right">
+    <header id="p_top" role="banner">
+        <div class="flex">
+            <div class="h_title">portfolio</div>
+            <nav class="full">
+                <ul class="flex gap">
+                    <a href="#p_top" class="hover1"><li class="omote1">
+                        <div>トップ</div>
+                        <div class="ura1"></div>
+                    </li></a>
+                    <a href="#title1"><li class="omote1 hover2">
+                        <div>出来る事</div>
+                        <div class="ura2"></div>
+                    </li></a>
+                    <a href="#title2"><li class="omote1 hover3">
+                        <div>模写したサイト</div>
+                        <div class="ura3"></div>
+                    </li></a>
+                    <a href="#f_title"><li class="omote1 hover4">
+                        <div>連絡</div>
+                        <div class="ura4"></div>
+                    </li></a>
+                </ul>
+            </nav>
+        </div>
+        
+        <button type="button" class="drawer-toggle drawer-hamburger menu">
+            <div class="bou1"></div>
+            <div class="bou2"></div>
+            <div class="bou3"></div>
+        </button>
+        <nav class="drawer-nav b_orange h_nav" role="navigation">
+            <div class="nav_title">MENU</div>
+            <ul>
+                <a href="#p_top">
+                    <button><li class="h_li">トップ</li></button>
+                </a>
+                <a href="#title1">
+                    <button><li class="h_li">出来る事</li></button>
+                </a>
+                <a href="#title2">
+                    <button><li class="h_li">模写したサイト</li></button>
+                </a>
+                <a href="#f_title">
+                    <button><li class="h_li">連絡</li></button>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
 
     <main>
         <div class="flex top">
             <div class="top_left">
-                <div class="tl_1"></div>
-                <div class="tl_2"></div>
+                <div class="tl_1 flex">
+                    <div class="icon"></div>
+                    <div>
+                        <div class="namae">菅野 孝龍</div>
+                        <div class="name">sugano kouryu</div>
+                        <div class="portfolio">ポートフォリオサイト</div>
+                    </div>
+                </div>
+                <div class="tl_2">
+                    <p  class="comment">
+                        こんにちは！御覧いただきありがとうございます。<br>
+                        私は2025年8月に製造業の会社を退職し、約4か月間の職業訓練でWEBデザイン、HTML、CSS、JavaScriptについて学びました。<br>
+                        今まで建築or工場しか選択肢のなかった私ですが、ここで変わらなければ一生「誰でもできる仕事」から抜け出せないと悟り、人生を変えるつもりで就職活動をしています！
+                    </p>
+                </div>
             </div>
             <div class="top_right">
-                <div class="tr_1"></div>
+                <div class="tr_1">
+                        <div class="profile">プロフィール</div>
+                    <table>
+                        <tr>
+                            <th class="hidariue">名前</th>
+                            <td>菅野 孝龍</td>
+                            <td class="migiue"></td>
+                        </tr>
+                        <tr>
+                            <th>生年月日</th>
+                            <td>1996/05/26</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>血液型</th>
+                            <td>O型</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="th1">前職</th>
+                            <td class="td2">
+                                <ul class="list tuika1">
+                                    <li>建設</li>
+                                    <li>配送</li>
+                                </ul>
+                            </td>
+                            <td class="td3">
+                                <ul class="list">
+                                    <li>製造</li>
+                                    <li>電気工事</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="hidarisita th1 boder_none">趣味</th>
+                            <td class="td2 boder_none">
+                                <ul class="list tuika2">
+                                    <li>カラオケ</li>
+                                    <li>ゲーム</li>
+                                </ul>
+                            </td>
+                            <td class="migisita td3 boder_none">
+                                <ul class="list">
+                                    <li>漫画</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
 
-        <h2 class="title1">出来る事</h2>
+        <h2 id="title1">出来る事</h2>
         <div class="flex contents1">
             <div class="c1">
-                <div class="ta_center">HTML</div>
-                <div class="c1_html"></div>
+                <div class="c1_title">HTML</div>
+                <div class="c1_content aaa">
+                    <p class="f_16">
+                        出来るだけわかりやすいクラス名をつける事、簡潔に書くこと、見やすいよう開始タグと閉じタグの位置を合わせるなど意識して書くようにしています
+                    </p>
+                </div>
             </div>
             <div class="c1">
-                <div class="ta_center">CSS</div>
-                <div class="c1_css"></div>
+                <div class="c1_title">CSS</div>
+                <div class="c1_content bbb">
+                    <p  class="f_16">
+                        まだまだ知らない事や使った事のないCSSがたくさんあるので、積極的にいろんなやり方を試して引き出しを増やしていきたいです
+                    </p>
+                </div>
             </div>
             <div class="c1">
-                <div class="ta_center">JavaScript</div>
-                <div class="c1_java"></div>
+                <div class="c1_title">JavaScript</div>
+                <div class="c1_content ccc">
+                    <p  class="f_16">
+                        変数やif文for文などの基本とjQueryの書き方、簡単なプラグインの使い方を学びました
+                    </p>
+                </div>
             </div>
         </div>
-    
-    </main>
 
+        <h2 id="title2">模写したサイト</h2>
+        <div class="flex gap contents2">
+            <div class="c2">
+                <img src="images/kuziracafe.png">
+                <div class="flex gap">
+                    <div class="item1">タイトル</div>
+                    <div class="item2">KUZIRA Café</div>
+                </div>
+                <div class="flex gap">
+                    <div class="item1">制作日</div>
+                    <div class="item2">2025/12/23</div>
+                </div>
+                <p class="setumei">教科書の課題で、HTMLとCSSだけで作った初めて作ったWebページ</p>
+            </div>
+            <div class="c2">
+                <img src="images/shimashika.png">
+                <div class="flex gap">
+                    <div class="item1">タイトル</div>
+                    <div class="item2">しま歯科</div>
+                </div>
+                <div class="flex gap">
+                    <div class="item1">制作日</div>
+                    <div class="item2">2026/01/23</div>
+                </div>
+                <p class="setumei">position：absolute；で背景画像を配置し、z-indexで重なりかたの調節しました。</p>
+            </div>
+            <div class="c2">
+                <img src="images/hive.png">
+                <div class="flex gap">
+                    <div class="item1">タイトル</div>
+                    <div class="item2">HIVE</div>
+                </div>
+                <div class="flex gap">
+                    <div class="item1">制作日</div>
+                    <div class="item2">2026/01/28</div>
+                </div>
+                <p class="setumei">シンプルなつくりのサイトでHTML,CSSを綺麗にまとめる練習をしました。</p>
+            </div>
+        </div>
+
+        <div class="flex gap contents2">
+            <div class="c2">
+                <img src="images/kemono.png">
+                <div class="flex gap">
+                    <div class="item1">タイトル</div>
+                    <div class="item2">けものみち</div>
+                </div>
+                <div class="flex gap">
+                    <div class="item1">制作日</div>
+                    <div class="item2">2026/01/30</div>
+                </div>
+                <p class="setumei">画像の多いサイトで配置のしかたなど参考にしました。</p>
+            </div>
+            <div class="c2">
+                <img src="images/icos.png">
+                <div class="flex gap">
+                    <div class="item1">タイトル</div>
+                    <div class="item2">icos</div>
+                </div>
+                <div class="flex gap">
+                    <div class="item1">制作日</div>
+                    <div class="item2">2026/02/02</div>
+                </div>
+                <p class="setumei">ブログっぽいサイトの模写に挑戦しました。</p>
+            </div>
+            <div class="c2 kara"></div>
+        </div>
+
+    </main>
+    <footer>
+        <h2 id="f_title">お問い合わせフォーム</h2>
+        <div class="f_content">
+            <form>
+                <p>
+                    お名前<br>
+                    <input type="text" name="name" placeholder="お名前を入力してください" id="namae">
+                </p>
+                <p>
+                    連絡先<br>
+                    <input type="text" name="mail" placeholder="メールアドレスを入力してください" id="mail">
+                </p>
+                <p>
+                    お問い合わせの内容<br>
+                    <textarea name="massage" placeholder="内容を入力してください"></textarea>
+                </p>
+                <p class="submit">
+                    <input class="sousin" type="submit" value="送信">
+                </p>
+            </form>
+        </div>
+        <a class="btn" href="#p_top"><button>ページトップへ</button></a>
+        
+    </footer>
+    
 
     <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="js/drawer.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
