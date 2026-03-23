@@ -1,9 +1,8 @@
 $(function(){
 
+
 $('.drawer').drawer();
-
 $('.c1_content').hide();
-
 
 
 let scroll;
@@ -41,7 +40,6 @@ $(window).on('scroll', function(){
 });
 
 
-
 $('.hover1').hover(function(){
     $('.ura1').css('transform','rotate(10deg)');
 },function(){
@@ -69,19 +67,12 @@ $(document).ready(function() {
 
 
 let num = $(window).width();
-
 if (num < 657) {
     $('.td3').html('');
     $('.tuika1').html($('.tuika1').html()+'<li>製造</li><li>電気工事</li>');
 } else {
     console.log('画面幅657px以下でtableのHTML変更');
 }
-
-
-
-
-
-
 
 
 });
